@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #03001C;
+    /* min-height: 240vh; */
+
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    z-index: 1000;
+    transition: 0.5s;
+}
+
+header.sticky{
+    padding: 15px 30px;
+    background-color: #B6EADA;
+}
+
+header .logo{
+    position: relative;
+    color: #B6EADA;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #B6EADA;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: 0.5s;
+
+}
+
+header.sticky .logo,
+header.sticky ul li a{
+    color: #03001C;
+}
+
+header ul li a:hover{
+    color: #FC2947;
+}
+
+header.sticky ul li a:hover{
+    color: #FC2947;
+}
+
+
+.one{
+    min-height: 100vh;
+    /* border: 2px solid red; */
+
+}
+
+.two{
+    /* border: 2px solid red; */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.sidebar {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 5px; */
+}
+
+
+.object {
+    /* border: 3px solid red; */
+    width: 550px;
+    height: 82%;
+    background-color: #301E67;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.scroll-trigger{
+    cursor: pointer;
+}
+
+.translate-right-up {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+  
+.translate-right-up:hover {
+    transform: translate(5px, -5px);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.promo{
+    width: 90%;
+    min-height: 70%;
+}
+
+.info-text{
+    color: white;
+    /* padding-top: 40px; */
+}
+
+.info{
+    overflow: auto;
+}
+
+.title{
+    color: white;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.members{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+  
+}
+
+.info-text{
+    font-size: 0.8rem;
+    padding-left: 10px;
+}
+
+#booking{
+    border: 3px solid wheat;
+    width: 90%;
+    height: 550px;
+    padding: 0px 8px;
+    background-color:#B2A4FF;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.form-inputs{
+    border: 3px solid red;
+}
+
+.form-label{
+    color: White;
+  
+}
+
+.required::after {
+    content: "• ";
+    color: red;
+    margin-left: 5px;
+}
+
+#route, #region{
+    background-color: white;
+    color: black;
+}
+
+.dropdown-toggle{
+    width: 100%;
+
+}
+
+.dropdown-menu{
+    text-align: center;
+ 
+}
+
+.dropdown-item{
+    cursor: pointer;
+
+}
+
+.box{
+    background-color: white;
+    height: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.box .slider{
+    width: 85%;
+}
+
+.box .value{
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 15%;
+    text-align: center;
+
+}
+
+#special-request{
+    height: 130px;
+}
+
+.submit-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.valid{
+    font-size: 0.9rem;
+}
+
+.my-modal {
+    margin: auto;
+    padding: 1em;
+    width: 500px;
+    font-size: 0.9rem;
+    /* border: 0;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3); */
+  
+}
+
+.close-button{
+    margin-left: 80%;
+}
+
+.rating-box .stars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 0.8rem;
+}
+
+.stars i {
+    color: #ded9ca;
+    font-size: 40px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.stars i.active {
+    color: #ff9c1a;
+}
+
+@media (max-width: 767px) {
+    #booking{
+        /* width: 80%; */
+        height: 100%;
+        /* margin-bottom: 20px; */
+    }
+    
+
+}
